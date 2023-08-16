@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joel's Store - Online E-commerce Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        .header {
+            background-color: #FF0000;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+        }
+        .store-name {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .btn {
+            background-color: #FF0000;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .shopping-cart-btn {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+        .shopping-cart-icon {
+            width: 30px;
+            height: 30px;
+            fill: #fff;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        .item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+        }
+        .item-image {
+            flex: 1;
+            max-width: 150px;
+        }
+        .item-image img {
+            width: 100%;
+            height: auto;
+        }
+        .item-details {
+            flex: 2;
+            padding-left: 1rem;
+        }
+        .item-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        .item-price {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #FF0000;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="store-name">Joel's Store</h1>
+        <button class="btn">Sign In</button>
+        <button class="btn">More Information</button>
+        <button class="shopping-cart-btn">
+            <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt="Shopping Cart" class="shopping-cart-icon">
+        </button>
+    </div>
+    <div class="container">
+        <!-- Item 1 -->
+        <div class="item">
+            <div class="item-image">
+                <img src="https://down-sg.img.susercontent.com/file/sg-50009109-65e415fa54dcce6a03739df70aee9c5d" alt="Item 1">
+            </div>
+            <div class="item-details">
+                <h2 class="item-title">NEWERA MLB Basic Black Unisex T Shirt 2023 new</h2>
+                <p class="item-price">$60.78</p>
+            </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="item">
+            <div class="item-image">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/74892143_f94145facb.jpg/225px-74892143_f94145facb.jpg" alt="Item 2">
+            </div>
+            <div class="item-details">
+                <h2 class="item-title">Nike Air Jordan 1 Trendy Retro High Barrel Basketball Shoes</h2>
+                <p class="item-price">$129</p>
+            </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="item">
+            <div class="item-image">
+                <img src="https://down-sg.img.susercontent.com/file/7afeb5a17fdaeeed3dbaa1c49c1a8411" alt="Item 3">
+            </div>
+            <div class="item-details">
+                <h2 class="item-title">Tissot PRX Powermatic 80 Watch (T1374071105100)</h2>
+                <p class="item-price">$990</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
