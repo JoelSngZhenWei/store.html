@@ -12,6 +12,12 @@
             background-color: #f7f7f7;
             color: #333;
         }
+        .top-border {
+            border-top: 5px solid #FF0000;
+        }
+        .bottom-border {
+            border-bottom: 5px solid #FF0000;
+        }
         .header {
             background-color: #FF0000;
             color: #fff;
@@ -32,18 +38,26 @@
             cursor: pointer;
             margin-right: 10px;
         }
-        .shopping-cart-btn {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
+        .shopping-cart-btn,
+        .more-info-btn {
             background-color: transparent;
             border: none;
             cursor: pointer;
+            position: absolute;
+        }
+        .shopping-cart-btn {
+            top: 1rem;
+            right: 1rem;
+        }
+        .more-info-btn {
+            bottom: 1rem;
+            right: 1rem;
         }
         .shopping-cart-icon {
             width: 30px;
             height: 30px;
             fill: #fff;
+            margin-right: 5px;
         }
         .container {
             max-width: 800px;
@@ -82,16 +96,22 @@
             font-weight: bold;
             color: #FF0000;
         }
+        .address {
+            text-align: center;
+            margin-top: 2rem;
+        }
     </style>
 </head>
 <body>
+    <div class="top-border"></div>
     <div class="header">
         <h1 class="store-name">Joel's Store</h1>
         <button class="btn">Sign In</button>
-        <button class="btn">More Information</button>
         <button class="shopping-cart-btn">
             <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt="Shopping Cart" class="shopping-cart-icon">
+            Shopping Cart
         </button>
+        <button class="more-info-btn">More Information</button>
     </div>
     <div class="container">
         <!-- Item 1 -->
@@ -124,6 +144,9 @@
                 <p class="item-price">$990</p>
             </div>
         </div>
+    </div>
+    <div class="address bottom-border">
+        1234 Random Street, Cityville, Country
     </div>
 </body>
 </html>
